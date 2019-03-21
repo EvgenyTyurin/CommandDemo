@@ -6,10 +6,13 @@ import evgenyt.command_demo.command.CopyCommand;
 import evgenyt.command_demo.command.PasteCommand;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
-
 import java.util.Stack;
 
-public class Controller {
+/**
+ * Editor (Text Area + buttons, clipboard, command history)
+ */
+
+public class Editor {
 
     @FXML
     private TextArea textArea;
@@ -60,5 +63,5 @@ public class Controller {
     public void setClipboard(String clipboard) {
         this.clipboard = clipboard;
     }
-    
+
 }
